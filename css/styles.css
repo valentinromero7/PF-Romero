@@ -130,6 +130,41 @@ footer p{
     background-color:#A78A7F;
     font-size: 1.5rem;
 }
+select{
+    text-align: start;
+    margin-top: 10px;
+    background-color: #E7D7C1;
+    border: solid 2px;
+    border-color: #33221e;
+    font-size: 0.8rem;
+    margin-left: 10px; ;
+}
+@media(min-width: 660px){
+    select{
+        font-size: 1rem;
+    }
+}
+.selecciona{
+    background-color: #E7D7C1;
+    padding-bottom: 5px;
+    text-align: start;
+}
+.label-selec{
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: #E7D7C1;
+}
+.elegi{
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+@media(min-width: 660px){
+    .elegi{
+        font-size: 1.2rem;
+    }
+}
 .formulario-index {
     border-top: solid 10px;
     border-color: #A78A7F;
