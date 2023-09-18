@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,31 +11,46 @@
     <title>Inicio</title>
 </head>
 <body>
-    <header id="header-index">
+    <header id="header-index" class="col-12">
+
+        <nav class="navbar navbar-expand-xxxl">
         <h1>Tesoros del campo</h1>
-            <nav class="lista-nav">
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-
-                    <li>
-                        <a href="pages/Tienda.html">Tienda</a>
-                    </li>
-
-                    <li>
-                        <a href="pages/Conocenos.html">Conocenos</a>
-                    </li>
-
-                    <li>
-                        <a href="pages/Contacto.html">Contacto</a>
-                    </li>
-
-                    <li>
-                        <a href="pages/carrito.html">Carrito</a>
-                    </li>
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://instagram.com/tesoros_del_campo?igshid=OGQ5ZDc2ODk2ZA==">visita nuestras redes</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mas informacion
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="pages/conocenos.html">Conocenos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="pages/carrito.html">Carrito</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Busca tu Producto</a>
+                </li>
                 </ul>
-            </nav>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
 </header>
 
 <main>
