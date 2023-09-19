@@ -333,8 +333,9 @@ h2{text-align: center;
 }
 @media(min-width: 660px){
     .productos-carrito img{
-        width: 300px;
+        width: 200px;
         margin-top: 20px;
+        margin-left: 20px;
     }
 }
 
@@ -372,4 +373,27 @@ h2{text-align: center;
     margin-inline: 30px;
     margin-bottom: 20px;
     text-decoration: none;
+}
+.h1-carrito{
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: 30px;
+    background-color: #E7D7C1;
+    color: #735751;
+    text-align: center;
+    height: 50px;
+    padding-top: 20px;
+}
+.dropdown-item{
+    background-color: #A78A7F;
+    width: 0px;
+    margin: 0 auto;
+}
+.dropdown-item:hover{
+    font-size: 1.7rem;
+    color: #E7D7C1;
+    background-color: #A78A7F;
+}
+.dropdown-menu{
+    background-color: #A78A7F;
 }
