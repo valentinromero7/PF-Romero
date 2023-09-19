@@ -362,3 +362,14 @@ h2{text-align: center;
 .body-carrito{
     background-color: #A78A7F;
 }
+
+.boton-agregar-carrito{
+    background-color:#E7D7C1;
+    font-size: 15px;
+    color:#33221e;
+    padding: 2px;
+    margin-top: 10px;
+    margin-inline: 30px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
