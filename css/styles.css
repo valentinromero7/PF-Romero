@@ -413,3 +413,10 @@ h2{text-align: center;
         font-size: 1.5rem;
     }
 }
+.link-carrito{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 13px;
+    padding-bottom: 10px;
+}
