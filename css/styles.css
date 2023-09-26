@@ -211,24 +211,7 @@ input{
         font-size: 1.5rem;
     }
 }
-.ir-arriba{
-    text-decoration: none;
-    font-size: 1rem;
-    color: #33221e;
-    border: solid 3px;
-    border-color: #735751;
-    position: relative;
-    left: 73%;
-    top: 20px;
-    padding: 1px;
-}
-@media(min-width: 660px){
-    .ir-arriba{
-        font-size: 1.5rem;
-        position: relative;
-        left: 80%;
-    }
-}
+
 h2{text-align: center;
     background-color: #E7D7C1;
     color: #735751;
@@ -396,4 +379,42 @@ h2{text-align: center;
 }
 .dropdown-menu{
     background-color: #A78A7F;
+}
+.nav-link-ig{
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+    margin-right: 5px;
+    color: #33221e;
+}
+@media(min-width: 660px){
+    .nav-link-ig{
+        font-size: 2rem;
+    }
+}
+.contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+    margin-right: 20px;
+}
+@media(min-width: 660px){
+    .contenedor-footer{
+        margin-right: 40px;
+    }
+}
+.ir-arriba{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #33221e;
+    border: solid 3px;
+    border-color: #735751;
+    padding: 3px;
+    margin-bottom:20px;
+}
+@media(min-width: 660px){
+    .ir-arriba{
+        font-size: 1.5rem;
+    }
 }
