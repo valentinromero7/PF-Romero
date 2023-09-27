@@ -104,6 +104,7 @@ footer{
     background-color: #E7D7C1;
     padding-top: 30px;
     padding-bottom: 1px;
+    font-family: 'Montserrat', sans-serif;
 }
 footer p{
     text-align: left;
@@ -112,6 +113,7 @@ footer p{
     background-color: #E7D7C1;
     margin: 30px;
     color: #33221e;
+    font-family: 'Montserrat', sans-serif;
 }
 @media(min-width: 660px){
     footer p{
@@ -140,6 +142,7 @@ footer p{
 .conocenos p{
     background-color:#A78A7F;
     font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 select{
     text-align: start;
@@ -149,6 +152,7 @@ select{
     border-color: #33221e;
     font-size: 0.8rem;
     margin-left: 10px; ;
+    font-family: 'Montserrat', sans-serif;
 }
 @media(min-width: 660px){
     select{
@@ -159,6 +163,7 @@ select{
     background-color: #E7D7C1;
     padding-bottom: 5px;
     text-align: start;
+    font-family: 'Montserrat', sans-serif;
 }
 .label-selec{
     margin-left: 20px;
@@ -186,10 +191,11 @@ select{
     color: #33221e;
     font-family:Georgia, 'Times New Roman', Times, serif ;
     font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 p{
     font-size: 2rem;
-    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     background-color: #E7D7C1;
@@ -279,7 +285,7 @@ h2{text-align: center;
     font-size: 15px;
     background-color: #f1eae0;
     color: #33221e;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 2px
 }
 @media(min-width: 660px){
@@ -292,8 +298,8 @@ h2{text-align: center;
     font-size: 15px;
     background-color: #f1eae0;
     color: #33221e;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 2px
+    font-family: 'Montserrat', sans-serif;
+    padding: 2px;
 }
 @media(min-width: 660px){
     .limpiar-form{
