@@ -295,6 +295,11 @@ p {
   margin-top: 40px;
 }
 
+@media (min-width: 660px) {
+  .resumen-index {
+    margin-inline: 100px;
+  }
+}
 /* Formularios */
 .formulario-index {
   margin-top: 30px;
