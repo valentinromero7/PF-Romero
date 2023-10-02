@@ -18,7 +18,7 @@ p {
     margin-bottom: 10px;
     width: 500px;
     background-color: $color-primario;
-    justify-content: start;
+    @include flex-start;
     margin-left: 5px;
     font-size: $size-p;
     margin-left: 20px;
@@ -46,9 +46,11 @@ p {
     }
 }
 .parrafo-formulario-contacto{
+
     color: $color-fuentes-oscuras;
     margin-top: 20px;
     @include flex-center;
+    text-align: center;
     font-size: $size-p - .6rem;
     padding-inline: 20px;
 }
