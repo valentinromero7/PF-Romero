@@ -2,8 +2,7 @@
 p {
     font-size: $size-p;
     font-family: "Montserrat", sans-serif;
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     background-color: $color-secundario;
 }
 
@@ -32,20 +31,31 @@ p {
 }
 
 .parrafo-contacto {
-    display: flex;
-    align-items: start;
-    justify-content: start;
+    @include flex-start;
     font-weight: 1000;
     font-size: $size-p;
     background-color: $color-primario;
     color: $color-fuentes-oscuras;
-    display: flex;
     margin-top: 20px;
     margin-left: 20px;
 }
 @media (min-width: 660px) {
     .parrafo-contacto {
     font-size: $size-p + .5rem;
-    justify-content: start;
+    @include flex-start
     }
 }
+.parrafo-formulario-contacto{
+    color: $color-fuentes-oscuras;
+    margin-top: 20px;
+    @include flex-center;
+    font-size: $size-p - .6rem;
+    padding-inline: 20px;
+}
+@media (min-width: 660px){
+    .parrafo-formulario-contacto{
+        font-size: $size-p;
+    }
+}
+
+

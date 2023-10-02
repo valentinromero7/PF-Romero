@@ -1,10 +1,7 @@
 /* Cards */
 .padre-cards 
 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     text-align: center;
     margin-top: 10px;
 
@@ -39,8 +36,8 @@
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
-        border: solid 4px;
-        border-color: $color-secundario;
+        border-radius: 10px;
+        border-color: $color-fuentes-oscuras;
 
         &:hover{
             background-color: $color-fuentes;
@@ -50,17 +47,6 @@
 }
 @media (min-width: 660px) {
     .padre-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    }
-}
-
-@media (min-width: 1058px) {
-    .padre-cards {
-    display: inline;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+        @include flex-row-wrap;
     }
 }

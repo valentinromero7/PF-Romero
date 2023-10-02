@@ -3,10 +3,7 @@
     margin-top: 30px;
     background-color: $color-primario;
     margin-bottom: 30px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
+    @include flex-start-column;
 
     p{
         width: 100%;
@@ -61,16 +58,11 @@ input {
     border: solid 2px;
     border-color: $color-fuentes;
     font-size: 15px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.div-form {
-    width: 100%;
+    @include flex-start-column;
 }
 
 .botones-formulario {
+    border-radius: 20px;
     margin-top:5px;
     margin-left:20px;
     font-size:10px;
@@ -78,17 +70,12 @@ input {
     color: $color-fuentes-oscuras;
     font-family: "Montserrat", sans-serif;
     padding: 3px;
+    width: 110px;
+    align-items: center;
 }
 
 @media (min-width: 660px) {
-    .enviar-form {
+    .botones-formulario {
     font-size: 15px;
     }
-}
-
-@media (min-width: 660px) {
-    .limpiar-form {
-    font-size: 15px;
-    }
-
 }

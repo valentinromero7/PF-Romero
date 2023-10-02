@@ -1,9 +1,8 @@
 /* Conocenos */
 .conocenos {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    @include flex-center;
     color: $color-fuentes-oscuras;
+    text-align: center;
     width: 300px;
     margin: 0 auto;
     margin-top: 20px;

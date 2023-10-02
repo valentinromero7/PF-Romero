@@ -31,7 +31,7 @@ body {
   text-decoration: none;
   font-size: 1rem;
   color: #33221e;
-  border: solid 3px;
+  border: solid 2px;
   border-color: #735751;
   padding: 3px;
   margin-bottom: 20px;
@@ -47,7 +47,8 @@ body {
   display: flex;
   justify-content: end;
   padding-right: 13px;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
+  padding-top: 10px;
 }
 
 .dropdown-item {
@@ -89,7 +90,7 @@ select {
   text-align: start;
   margin-top: 10px;
   background-color: #E7D7C1;
-  border: solid 2px;
+  border: solid 1px;
   border-color: #33221e;
   font-size: 0.8rem;
   margin-left: 10px;
@@ -129,8 +130,8 @@ select {
 /* Cards */
 .padre-cards {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 10px;
@@ -161,8 +162,8 @@ select {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  border: solid 4px;
-  border-color: #E7D7C1;
+  border-radius: 10px;
+  border-color: #33221e;
 }
 .padre-cards button:hover {
   background-color: #735751;
@@ -171,22 +172,15 @@ select {
 
 @media (min-width: 660px) {
   .padre-cards {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
 }
-@media (min-width: 1058px) {
-  .padre-cards {
-    display: inline;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
 /* Titulos */
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   width: 100%;
   font-size: 2rem;
   font-weight: 600;
@@ -223,6 +217,7 @@ p {
   font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #E7D7C1;
 }
 
@@ -250,13 +245,11 @@ p {
 }
 .parrafo-contacto {
   display: flex;
-  align-items: start;
   justify-content: start;
   font-weight: 1000;
   font-size: 1.5rem;
   background-color: #A78A7F;
   color: #33221e;
-  display: flex;
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -264,7 +257,23 @@ p {
 @media (min-width: 660px) {
   .parrafo-contacto {
     font-size: 2rem;
+    display: flex;
     justify-content: start;
+  }
+}
+.parrafo-formulario-contacto {
+  color: #33221e;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  padding-inline: 20px;
+}
+
+@media (min-width: 660px) {
+  .parrafo-formulario-contacto {
+    font-size: 1.5rem;
   }
 }
 /* Formularios */
@@ -274,7 +283,6 @@ p {
   margin-bottom: 30px;
   display: flex;
   justify-content: start;
-  align-items: start;
   flex-direction: column;
 }
 .formulario-index p {
@@ -330,15 +338,12 @@ input {
   border-color: #735751;
   font-size: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
 }
 
-.div-form {
-  width: 100%;
-}
-
 .botones-formulario {
+  border-radius: 20px;
   margin-top: 5px;
   margin-left: 20px;
   font-size: 10px;
@@ -346,15 +351,12 @@ input {
   color: #33221e;
   font-family: "Montserrat", sans-serif;
   padding: 3px;
+  width: 110px;
+  align-items: center;
 }
 
 @media (min-width: 660px) {
-  .enviar-form {
-    font-size: 15px;
-  }
-}
-@media (min-width: 660px) {
-  .limpiar-form {
+  .botones-formulario {
     font-size: 15px;
   }
 }
@@ -363,8 +365,8 @@ input {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 40px;
 }
 
@@ -417,9 +419,10 @@ input {
 /* Conocenos */
 .conocenos {
   display: flex;
-  text-align: center;
   justify-content: center;
+  align-items: center;
   color: #33221e;
+  text-align: center;
   width: 300px;
   margin: 0 auto;
   margin-top: 20px;

@@ -19,7 +19,7 @@
     text-decoration: none;
     font-size: 1rem;
     color: $color-fuentes-oscuras;
-    border: solid 3px;
+    border:solid 2px;
     border-color: $color-fuentes;
     padding: 3px;
     margin-bottom: 20px;
@@ -32,10 +32,10 @@
 }
 .link-carrito {
     width: 100%;
-    display: flex;
-    justify-content: end;
+    @include flex-end;
     padding-right: 13px;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
+    padding-top: 10px;
 }
 .dropdown-item {
     background-color: $color-primario;
@@ -54,8 +54,7 @@
 }
 
 .nav-link-ig {
-    display: flex;
-    justify-content: end;
+@include flex-end;
     font-size: 1.5rem;
     margin-right: 5px;
     color: $color-fuentes;
@@ -80,7 +79,7 @@ select {
     text-align: start;
     margin-top: 10px;
     background-color: $color-secundario;
-    border: solid 2px;
+    border: solid 1px;
     border-color: $color-fuentes-oscuras;
     font-size: 0.8rem;
     margin-left: 10px;
