@@ -13,15 +13,13 @@ p {
 }
 
 .parrafo-textarea {
+    padding-left: 20px;
     margin-top: 10px;
     color: $color-fuentes-oscuras;
     margin-bottom: 10px;
-    width: 500px;
+    width: 100%;
     background-color: $color-primario;
     @include flex-start;
-    margin-left: 5px;
-    font-size: $size-p;
-    margin-left: 20px;
 }
 
 @media (min-width: 660px) {
@@ -60,4 +58,11 @@ p {
     }
 }
 
-
+.resumen-index{
+    font-size: $size-p - .5rem;
+    background-color: $color-primario;
+    text-align: center;
+    margin-inline: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}

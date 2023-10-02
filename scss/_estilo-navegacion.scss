@@ -30,6 +30,13 @@
     font-size: 1.5rem;
     }
 }
+.link-conocenos{
+    text-decoration: none;
+    color: $color-fuentes-oscuras;
+    @include flex-center;
+    width: 100%;
+    font-weight: bold;
+}
 .link-carrito {
     width: 100%;
     @include flex-end;
