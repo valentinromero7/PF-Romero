@@ -71,3 +71,13 @@ p {
         margin-inline: 100px;
     }
 }
+@media (min-width: 990px){
+    .resumen-index{
+        margin-inline: 200px;
+    }
+}
+@media (min-width: 1100px){
+    .resumen-index{
+        margin-inline: 300px;
+    }
+}
