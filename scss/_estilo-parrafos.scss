@@ -1,0 +1,51 @@
+/* Parrafos */
+p {
+    font-size: $size-p;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: $color-secundario;
+}
+
+@media (min-width: 660px) {
+    p {
+        font-size: $size-p + .5rem;
+    }
+}
+
+.parrafo-textarea {
+    margin-top: 10px;
+    color: $color-fuentes-oscuras;
+    margin-bottom: 10px;
+    width: 500px;
+    background-color: $color-primario;
+    justify-content: start;
+    margin-left: 5px;
+    font-size: $size-p;
+    margin-left: 20px;
+}
+
+@media (min-width: 660px) {
+    .parrafo-textarea {
+    font-size: $size-p + .5rem;
+    }
+}
+
+.parrafo-contacto {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-weight: 1000;
+    font-size: $size-p;
+    background-color: $color-primario;
+    color: $color-fuentes-oscuras;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+@media (min-width: 660px) {
+    .parrafo-contacto {
+    font-size: $size-p + .5rem;
+    justify-content: start;
+    }
+}

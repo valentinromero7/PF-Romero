@@ -1,0 +1,119 @@
+/* Navegacion */
+.navbar 
+{
+    text-decoration-line: none;
+    text-decoration: none;
+    background-color: $color-secundario;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    a {
+        margin-inline: 5px;
+        text-decoration: none;
+        color: $color-fuentes;
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+    } 
+}
+.ir-arriba {
+    text-decoration: none;
+    font-size: 1rem;
+    color: $color-fuentes-oscuras;
+    border: solid 3px;
+    border-color: $color-fuentes;
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 660px) {
+    .ir-arriba {
+    font-size: 1.5rem;
+    }
+}
+.link-carrito {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 13px;
+    padding-bottom: 10px;
+}
+.dropdown-item {
+    background-color: $color-primario;
+    width: 0px;
+    margin: 0 auto;
+    &:hover
+    {
+        font-size: 1.7rem;
+        color:  $color-secundario;
+        background-color: $color-primario;
+    }    
+}
+
+.dropdown-menu {
+    background-color: $color-primario;
+}
+
+.nav-link-ig {
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+    margin-right: 5px;
+    color: $color-fuentes;
+}
+
+@media (min-width: 660px) {
+    .nav-link-ig {
+    font-size: 2rem;
+    }
+}
+
+
+li
+{
+    display: inline;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Selecciona tu producto */
+select {
+    text-align: start;
+    margin-top: 10px;
+    background-color: $color-secundario;
+    border: solid 2px;
+    border-color: $color-fuentes-oscuras;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 660px) {
+    select {
+        font-size: 1rem;
+    }
+}
+.selecciona {
+    background-color: $color-secundario;
+    padding-bottom: 5px;
+    text-align: start;
+    font-family: "Montserrat", sans-serif;
+}
+
+.label-selec {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: $color-secundario;
+}
+
+.elegi {
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+@media (min-width: 660px) {
+    .elegi {
+        font-size: 1.2rem;
+    }
+}

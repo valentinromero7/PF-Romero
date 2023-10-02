@@ -1,0 +1,28 @@
+/* Conocenos */
+.conocenos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: $color-fuentes-oscuras;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    p {
+        background-color: $color-primario;
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        color: $color-fuentes-oscuras;
+    }
+}
+
+@media (min-width: 660px) {
+    .conocenos {
+    width: 500px;
+    }
+}
+@media (min-width: 1020px) {
+    .conocenos {
+    width: 600px;
+    }
+}

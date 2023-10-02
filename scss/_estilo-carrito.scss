@@ -1,0 +1,59 @@
+/* Carrito */
+.padre-carrito {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.productos-carrito 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: $color-fuentes;
+
+    img {
+        border: solid 6px;
+        width: 100px;
+        border-color: $color-secundario;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 660px) {
+    .productos-carrito img {
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+.cantidad {
+    background-color: $color-fuentes;
+    font-size: 15px;
+    color: $color-secundario;
+}
+
+@media (min-width: 660px) {
+    .cantidad {
+        font-size: 30px;
+    }
+}
+
+.que-lleva {
+    background-color: $color-fuentes;
+    font-size: 15px;
+    color: $color-secundario;
+    margin-left: 20px;
+}
+
+@media (min-width: 660px) {
+    .que-lleva {
+        font-size: 30px;
+    }
+}

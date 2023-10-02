@@ -1,0 +1,94 @@
+/* Formularios */
+.formulario-index {
+    margin-top: 30px;
+    background-color: $color-primario;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+
+    p{
+        width: 100%;
+        font-size: 20px;
+        color: $color-fuentes-oscuras;
+    }
+}
+@media(min-width:660px){
+    .formulario-index p{
+        font-size:25px;
+    }
+}
+.label{
+    margin-left: 20px;
+    color: $color-fuentes-oscuras;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+    .form-contacto {
+        flex-direction: column;
+        color: $color-fuentes-oscuras;
+        background-color: $color-primario;
+        font-size: 18px;
+    }
+    
+    @media (min-width: 660px) {
+        .form-contacto {
+        font-size: 1.5rem;
+        margin-left: 20px;
+        margin-top: 40px;
+        }
+    }
+
+textarea {
+    margin-left: 20px;
+    border: solid 2px;
+    border-color: $color-fuentes;
+    width: 250px;
+    height: 100px;
+}
+
+@media (min-width: 660px) {
+    textarea {
+    width: 400px;
+    height: 200px;
+    }
+}
+input {
+    margin-left: 20px;
+    border: solid 2px;
+    border-color: $color-fuentes;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-form {
+    width: 100%;
+}
+
+.botones-formulario {
+    margin-top:5px;
+    margin-left:20px;
+    font-size:10px;
+    background-color: $color-secundario;
+    color: $color-fuentes-oscuras;
+    font-family: "Montserrat", sans-serif;
+    padding: 3px;
+}
+
+@media (min-width: 660px) {
+    .enviar-form {
+    font-size: 15px;
+    }
+}
+
+@media (min-width: 660px) {
+    .limpiar-form {
+    font-size: 15px;
+    }
+
+}

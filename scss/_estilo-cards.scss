@@ -1,0 +1,66 @@
+/* Cards */
+.padre-cards 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+
+    img 
+    {
+        border: solid 6px;
+        width: 250px;
+        border-color: $color-secundario;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    p 
+    {
+        margin-top: 5px;
+        background-color: $color-primario;
+        font-size: 25px;
+        color: $color-fuentes-oscuras;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    button 
+    {
+        background-color: $color-secundario;
+        font-size: 1.2rem;
+        color: $color-fuentes;
+        padding: 5px;
+        margin-top: 10px;
+        margin-inline: 30px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        border: solid 4px;
+        border-color: $color-secundario;
+
+        &:hover{
+            background-color: $color-fuentes;
+            color: $color-secundario;
+        }
+    }
+}
+@media (min-width: 660px) {
+    .padre-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1058px) {
+    .padre-cards {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+}

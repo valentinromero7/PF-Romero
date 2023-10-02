@@ -1,0 +1,36 @@
+/* Titulos */
+h1 
+{
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: $size-h1;
+    font-weight: 600;
+    background-color: $color-secundario;
+    color: $color-fuentes;
+    text-align: center;
+    height: 20px;
+    padding-top: 20px;
+}
+
+@media (min-width: 660px)
+{
+    h1 {
+        font-size: $size-h1+.5rem;
+        padding-bottom: 20px;
+    }
+}
+
+h2 {
+    text-align: center;
+    background-color: $color-secundario;
+    color: $color-fuentes;
+    margin-top: 7px;
+    font-size: $size-h1 - .5rem;
+    width: 100%;
+}
+
+@media (min-width: 660px) {
+    h2 {
+    font-size: 2rem;
+    }
+}
