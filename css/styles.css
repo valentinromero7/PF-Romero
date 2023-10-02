@@ -338,6 +338,16 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (min-width: 660px) {
+  .label {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 990px) {
+  .label {
+    font-size: 1.7rem;
+  }
+}
 .form-contacto {
   flex-direction: column;
   color: #33221e;
@@ -352,6 +362,12 @@ p {
     margin-top: 40px;
   }
 }
+.div-form-genero {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 30px;
+}
+
 textarea {
   margin-left: 20px;
   border: solid 2px;
@@ -376,6 +392,16 @@ input {
   flex-direction: column;
 }
 
+@media (min-width: 660px) {
+  input {
+    font-size: 25px;
+  }
+}
+@media (min-width: 660px) and (min-width: 990px) {
+  input {
+    font-size: 27px;
+  }
+}
 .botones-formulario {
   border-radius: 20px;
   margin-top: 5px;

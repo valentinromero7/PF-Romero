@@ -24,6 +24,17 @@
     font-family: "Montserrat", sans-serif;
 }
 
+@media (min-width:660px) {
+    .label{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width:990px) {
+    .label{
+        font-size: 1.7rem;
+    }
+}
+
     .form-contacto {
         flex-direction: column;
         color: $color-fuentes-oscuras;
@@ -39,6 +50,11 @@
         }
     }
 
+    .div-form-genero{
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 30px;
+    }
 textarea {
     margin-left: 20px;
     border: solid 2px;
@@ -60,7 +76,17 @@ input {
     font-size: 15px;
     @include flex-start-column;
 }
+@media (min-width: 660px){
+    input{
+        font-size: 25px;
+    }
 
+    @media (min-width: 990px){
+        input{
+            font-size: 27px;
+        }
+    }
+}
 .botones-formulario {
     border-radius: 20px;
     margin-top:5px;
@@ -74,9 +100,9 @@ input {
     align-items: center;
 }
 
-@media (min-width: 660px) {
-    .botones-formulario {
-    width: 170px;
-    font-size: 16px;
+@media (min-width: 660px) 
+    {.botones-formulario {
+        width: 170px;
+        font-size: 16px;
     }
 }
