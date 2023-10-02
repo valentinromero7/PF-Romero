@@ -359,7 +359,8 @@ input {
 
 @media (min-width: 660px) {
   .botones-formulario {
-    font-size: 15px;
+    width: 170px;
+    font-size: 16px;
   }
 }
 /* Carrito */
