@@ -147,7 +147,8 @@ p {
     background-color: #A78A7F;
     justify-content: start;
     margin-left: 5px;
-    font-size: 20px;
+    font-size: 1rem;
+    margin-left: 20px;
 }
 
 @media (min-width: 660px) {
@@ -295,8 +296,8 @@ select {
     background-color: #A78A7F;
     margin-bottom: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     flex-direction: column;
 
     p{
@@ -319,9 +320,6 @@ select {
 }
 
     .form-contacto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
         color: #33221e;
         background-color: #A78A7F;
@@ -337,7 +335,7 @@ select {
     }
 
 textarea {
-    margin: 0 auto;
+    margin-left: 20px;
     border: solid 5px;
     border-color: #735751;
     width: 250px;
@@ -364,9 +362,10 @@ input {
     width: 100%;
 }
 
-.enviar-form {
+.botones-formulario {
+    margin-top:5px;
     margin-left:20px;
-    font-size: 10px;
+    font-size:10px;
     background-color: #f1eae0;
     color: #33221e;
     font-family: "Montserrat", sans-serif;
@@ -377,14 +376,6 @@ input {
     .enviar-form {
     font-size: 15px;
     }
-}
-.limpiar-form {
-    margin-left:20px;
-    font-size: 10px;
-    background-color: #f1eae0;
-    color: #33221e;
-    font-family: "Montserrat", sans-serif;
-    padding: 2px;
 }
 
 @media (min-width: 660px) {
