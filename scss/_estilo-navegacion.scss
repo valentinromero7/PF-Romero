@@ -5,15 +5,88 @@
     text-decoration: none;
     background-color: $color-secundario;
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    height: 150px;
     a {
-        margin-inline: 5px;
         text-decoration: none;
         color: $color-fuentes;
         font-size: 1.5rem;
         font-family: "Montserrat", sans-serif;
     } 
+}
+
+.navbar-collapse{
+    position: relative;
+    bottom: 55px;
+    background-color: $color-secundario;
+    padding: 10px;
+}
+@media (min-width: 660px){
+    .navbar-collapse{
+        bottom: 103px;
+        padding: 40px;
+    }
+}
+@media (min-width: 990px){
+    .navbar-collapse{
+        bottom: 165px;
+        padding: 40px;
+    }
+}
+
+.navbar-toggler{
+    position: relative;
+    bottom: 30px;
+    right: 5px;
+}
+@media (min-width: 660px){
+    .navbar-toggler{
+        bottom: 70px;
+        right: 10px;
+    }
+}
+@media (min-width: 990px){
+    .navbar-toggler{
+        bottom: 160px;
+        right: 20px;
+    }
+}
+.logo{
+    width: 90px;
+    position: relative;
+    bottom: 50px;
+}
+@media (min-width: 660px){
+    .logo{
+        bottom: 100px;
+        width: 110px;
+    }
+}
+@media (min-width: 990px){
+    .logo{
+        bottom: 160px;
+        width: 160px;
+    }
+}
+
+.bi-cart{
+    padding-right: 0px;
+    margin: 0;
+    position: relative;
+    bottom: 3px;
+}
+@media (min-width: 660px){
+    .bi-cart{
+        right: 5px;
+        bottom: 30px;
+        font-size: 30px;
+    }
+}
+@media (min-width: 990px){
+    .bi-cart{
+        left: 80px;
+        font-size: 35px;
+        top: 5px;
+    }
 }
 .ir-arriba {
     text-decoration: none;
@@ -40,11 +113,20 @@
 .link-carrito {
     width: 100%;
     @include flex-end;
-    padding-right: 13px;
-    padding-bottom: 2px;
-    padding-top: 10px;
+    padding-right: 20px;
 }
+@media (min-width: 990px){
+    .link-carrito{
+        padding-right: 110px;
+    }
+}
+
+.container-fluid{
+    padding: 0%;
+}
+
 .dropdown-item {
+    @include flex-center;
     background-color: $color-primario;
     width: 0px;
     margin: 0 auto;
@@ -123,3 +205,4 @@ select {
         font-size: 1.2rem;
     }
 }
+

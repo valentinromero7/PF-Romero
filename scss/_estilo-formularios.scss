@@ -3,7 +3,7 @@
     margin-top: 30px;
     background-color: $color-primario;
     margin-bottom: 30px;
-    @include flex-start-column;
+    @include flex-column-center;
 
     p{
         width: 100%;
@@ -40,6 +40,7 @@
         color: $color-fuentes-oscuras;
         background-color: $color-primario;
         font-size: 18px;
+        @include flex-column-center
     }
     
     @media (min-width: 660px) {
@@ -74,7 +75,7 @@ input {
     border: solid 2px;
     border-color: $color-fuentes;
     font-size: 15px;
-    @include flex-start-column;
+    @include flex-column-center
 }
 @media (min-width: 660px){
     input{

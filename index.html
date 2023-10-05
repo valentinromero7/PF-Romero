@@ -27,13 +27,16 @@
             <div class="container-fluid">
                 <a href="pages/carrito.html" class="link-carrito"><i class="bi bi-cart" ></i></a>
             </div> 
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Inicio</a> 
+            <div class="container-fluid barranav">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a> 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li>
+                                    <a class="navbar-brand" href="index.html">Inicio</a>
+                                </li>
                                 <li>
                                     <a class="navbar-brand" href="pages/tienda.html">Tienda</a>
                                 </li>
@@ -102,19 +105,27 @@
 
             <div>
                 <label for="nombre" class="label">Nombre</label>
-                <input type="text" id="nombre">
+                <input type="text" id="nombre"
+                required
+                title="Por favor completa este campo">
             </div>
             <div>
                 <label for="apellido" class="label">Apellido</label>
-                <input type="text" id="apellido">
+                <input type="text" id="apellido"
+                required
+                title="Por favor completa este campo">
             </div>
             <div>
                 <label for="dni" class="label">DNI</label>
-                <input type="number" id="dni">
+                <input type="number" id="dni"
+                required
+                title="Por favor completa este campo">
             </div>
             <div>
                 <label for="email" class="label">Email</label>
-                <input type="email">
+                <input type="email"
+                required
+                title="Por favor completa este campo">
             </div>
 
         <div>
