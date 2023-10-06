@@ -21,54 +21,51 @@
 
     <!-- MENU -->
         <nav class="navbar navbar-expand-xxxl">
-        <h1>Tienda</h1>
-
-        <div class="container-fluid">
-            <a href="carrito.html" class="link-carrito"><i class="bi bi-cart" ></i></a>
-        </div> 
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="logo" class="logo"></a>
+            <h1>Tienda</h1>
+                <div class="container-fluid">
+                    <a href="carrito.html" class="link-carrito"><i class="bi bi-cart" ></i></a>
+                </div> 
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="logo" class="logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
                                 <li>
                                     <a class="navbar-brand" href="../index.html">Inicio</a>
                                 </li>
-                                <li class="nav-item">
+                                <li>
                                     <a class="navbar-brand" href="tienda.html">Tienda</a>
                                 </li>
+                            </li>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas informacion</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="conocenos.html">Conocenos</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas informacion</a>
-                                        <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="conocenos.html">Conocenos</a>
-                                        </li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="contacto.html">Contacto</a>
-                                        </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="contacto.html">Contacto</a>
                                 </li>
                             </ul>
-                        </div>
-
-            </div>
+                        </ul>
+                    </div>
+                </div>
+            <form>
+                <label for="selecciona" class="label-selec">Elige tu producto</label>
+                    <select name="selecciona">
+                        <option disabled>-selecciona entre estas opciones-</option>
+                        <option value="">Bolsos</option>
+                        <option value="">Toallas</option>
+                        <option value="">Materas</option>
+                        <option value="">Proximamente</option>
+                    </select>   
+            </form>
         </nav>
-        <form>
-            <label for="selecciona" class="label-selec">Elige tu producto</label>
-                <select name="selecciona">
-                    <option disabled>-selecciona entre estas opciones-</option>
-                    <option value="">Bolsos</option>
-                    <option value="">Toallas</option>
-                    <option value="">Materas</option>
-                    <option value="">Proximamente</option>
-                </select>   
-        </form>
     </header>
 
 <main>

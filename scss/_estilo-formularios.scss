@@ -17,13 +17,16 @@
     }
 }
 .label{
-    margin-left: 20px;
+    margin-inline: 2px;
     color: $color-fuentes-oscuras;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
+    @include flex-column-center
 }
-
+#masculino,#femenino,#nobin{
+margin-left: 5px;
+}
 @media (min-width:660px) {
     .label{
         font-size: 1.5rem;
@@ -34,28 +37,48 @@
         font-size: 1.7rem;
     }
 }
-
-    .form-contacto {
-        flex-direction: column;
-        color: $color-fuentes-oscuras;
-        background-color: $color-primario;
-        font-size: 18px;
-        @include flex-column-center
+.form-compra{
+    color: $color-fuentes-oscuras;
+    background-color: $color-secundario;
+    border-radius: 30px;
+    height: 600px;
+    width: 500px;
+    font-size: 18px;
+    margin-top: 30px;
+    @include flex-column-center
+}
+@media (min-width: 660px) {
+    .form-compra {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-top: 40px;
+    }
+}
+.card-compra{
+    @include flex-column-center;
+    margin-bottom: 50px;
+    
+}
+.form-contacto {
+    color: $color-fuentes-oscuras;
+    background-color: $color-primario;
+    font-size: 18px;
+    @include flex-column-center
     }
     
-    @media (min-width: 660px) {
-        .form-contacto {
-        font-size: 1.5rem;
-        margin-left: 20px;
-        margin-top: 40px;
-        }
+@media (min-width: 660px) {
+    .form-contacto {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-top: 40px;
     }
+}
 
-    .div-form-genero{
-        display: flex;
-        flex-flow: row wrap;
-        margin-bottom: 30px;
-    }
+.div-form-genero{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+}
 textarea {
     margin-left: 20px;
     border: solid 2px;
@@ -107,3 +130,33 @@ input {
         font-size: 16px;
     }
 }
+
+.botones-formulario-compra {
+    border-radius: 30px;
+    margin-top:20px;
+    margin-left:20px;
+    font-size:10px;
+    background-color: $color-secundario;
+    color: $color-fuentes-oscuras;
+    font-family: "Montserrat", sans-serif;
+    padding: 3px;
+    width: 110px;
+    align-items: center;
+}
+@media (min-width: 660px)
+    {.botones-formulario-compra {
+        width: 170px;
+        font-size: 16px;
+    }
+}
+.botones-formulario-compra:hover{
+    background-color: $color-fuentes;
+    color: $color-secundario;
+}
+@media (min-width: 660px)
+    {.botones-formulario-compra:hover{
+        font-size: 18px;
+        width: 180px;
+    }
+}
+

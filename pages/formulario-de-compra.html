@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700&family=Oswald:wght@200;300;500&family=Playfair+Display:ital,wght@0,400;0,900;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Etiquetas SEO -->
-    <meta name="description" content="Conocenos: en esta seccion te contaremos un poco sobre nosotros">
-    <meta name="keywords" content="Conocenos, Bolsos, Toallas, Decoracion, Materas, Artesanal, Tesoros del campo">
-    <title>Tesoros del campo-Conocenos</title>
+    <meta name="description" content="Carrito: aqui podras ver los productos que estas a punto de comprar.">
+    <meta name="keywords" content="Carrito, Bolsos, Toallas, Decoracion, Materas, Artesanal,">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Comprar</title>
 </head>
 <body>
-
-    <header id="header-conocenos" class="col-12">
+    <header id="header-comprar" class="col-12">
 
     <!-- MENU -->
         <nav class="navbar navbar-expand-xxxl">
-            <h1>Conocenos</h1>
+            <h1>Comprar</h1>
                 <div class="container-fluid">
                     <a href="carrito.html" class="link-carrito"><i class="bi bi-cart" ></i></a>
                 </div> 
@@ -56,26 +56,36 @@
                     </div>
                 </div>
         </nav>
+
     </header>
 
 <main>
-    <!-- Contiene texto de ejemplo, falta elaboracion-->
-    <h2>¿quienes somos?</h2>
-    <div class="conocenos">
-        <p>
-            Tesoros del campo es una empresa familiar, que produce una variedad de artesanias hechas por su fundadora "Marcela Locatelli". Aqui encontraras un sinfin de bellezas hechas a mano por nuestro equipo.
-            Nuestro deber es brindarte la mejor experiencia al comprar uno de nuestros productos, por eso incluimos envios gratis en todos ellos.
-        </p>
-    </div>
-</main>
+<div class="card-compra">
+    <form class="form-compra">
+        <label for="nombre-titular"  class="label">Nombre del titular</label>
+        <input type="text" id="nombre-titular"
+        required
+        title="Por favor completa este campo">
+        <label for="apellido-titular"  class="label">Apellido del titular</label>
+        <input type="text" id="apellido-titular"
+        required
+        title="Por favor completa este campo">
+        <label for="numero-tarjeta"  class="label">Numero de la tarjeta</label>
+        <input type="number" id="numero-tarjeta"
+        required
+        title="Por favor completa este campo">
+        <label for="codigo-seg" class="label">Codigo de seguridad</label>
+        <input type="number" id="codigo-seg"
+        required
+        title="Por favor completa este campo">
 
-<footer>
-    <section class="contenedor-footer">
-        <a href="#header-conocenos" class="ir-arriba">Ir arriba</a>
-        <a class="nav-link-ig" href="https://www.instagram.com/tesoros_del_campo/" target="_blank"><i class="bi bi-instagram" ></i></a> 
-    </section>
-    <p>(Todos los derechos reservados para Tesoros del campo)</p>
-</footer>
+        <input type="submit" value="Finalizar compra" class="botones-formulario-compra">
+
+
+        <input type="reset" value="Limpiar formulario" class="botones-formulario-compra">
+    </form>
+</div>
+</main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

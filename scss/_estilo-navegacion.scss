@@ -120,6 +120,20 @@
         padding-right: 110px;
     }
 }
+.boton-comprar{
+    text-decoration: none;
+    color: $color-fuentes-oscuras;
+    background-color: $color-secundario;
+    padding: 3px;
+    border-radius: 20px;
+    @include flex-center
+}
+@media (min-width: 990px){
+    .boton-comprar{
+        width: 200px;
+        font-size: 30px;
+    }
+}
 
 .container-fluid{
     padding: 0%;
