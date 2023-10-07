@@ -198,46 +198,48 @@ li {
 
 /* Selecciona tu producto */
 select {
-  text-align: start;
-  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: #E7D7C1;
-  border: solid 1px;
-  border-color: #402722;
-  font-size: 0.8rem;
-  margin-left: 10px;
-  font-family: "Montserrat", sans-serif;
+  border-color: #E7D7C1;
+  font-size: 18px;
+  text-align: center;
+  color: #402722;
+}
+select option {
+  font-size: 15px;
 }
 
 @media (min-width: 660px) {
   select {
-    font-size: 1rem;
+    font-size: 25px;
   }
 }
-.selecciona {
-  background-color: #E7D7C1;
-  padding-bottom: 5px;
-  text-align: start;
-  font-family: "Montserrat", sans-serif;
-}
-
-.label-selec {
-  margin-left: 20px;
-  margin-right: 10px;
-  font-size: 1.1rem;
-  color: #E7D7C1;
-}
-
-.elegi {
-  font-size: 15px;
-  margin-left: 10px;
-  font-weight: 400;
+.formulario-selec {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px;
+  border-color: #735751;
+  margin-top: 20px;
 }
 
 @media (min-width: 660px) {
-  .elegi {
-    font-size: 1.2rem;
+  .formulario-selec {
+    width: 400px;
+    position: relative;
+    right: 10px;
   }
 }
+.label-selec {
+  color: #735751;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
 /* Cards */
 .padre-cards {
   display: flex;

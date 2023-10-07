@@ -178,45 +178,38 @@ li
 }
 
 /* Selecciona tu producto */
-select {
-    text-align: start;
-    margin-top: 10px;
+select{
+    margin-bottom: 10px;
     background-color: $color-secundario;
-    border: solid 1px;
-    border-color: $color-fuentes-oscuras;
-    font-size: 0.8rem;
-    margin-left: 10px;
-    font-family: "Montserrat", sans-serif;
-}
-
-@media (min-width: 660px) {
-    select {
-        font-size: 1rem;
+    border-color: $color-secundario;
+    font-size: 18px;
+    text-align: center;
+    color: $color-fuentes-oscuras;
+    option{
+        font-size: 15px;
     }
 }
-.selecciona {
-    background-color: $color-secundario;
-    padding-bottom: 5px;
-    text-align: start;
-    font-family: "Montserrat", sans-serif;
-}
-
-.label-selec {
-    margin-left: 20px;
-    margin-right: 10px;
-    font-size: 1.1rem;
-    color: $color-secundario;
-}
-
-.elegi {
-    font-size: 15px;
-    margin-left: 10px;
-    font-weight: 400;
-}
-
-@media (min-width: 660px) {
-    .elegi {
-        font-size: 1.2rem;
+@media(min-width:660px){
+    select{
+        font-size: 25px;
     }
 }
-
+.formulario-selec{
+    border-radius: 30px;
+    @include flex-column-center;
+    border: solid 3px;
+    border-color: $color-fuentes;
+    margin-top: 20px
+}
+@media(min-width:660px){
+    .formulario-selec{
+        width: 400px;
+        position: relative;
+        right: 10px;
+    }
+}
+.label-selec{
+    color: $color-fuentes;
+    @include flex-center;
+    font-size: 22px;
+}
