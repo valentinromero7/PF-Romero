@@ -199,7 +199,7 @@ select{
     @include flex-column-center;
     border: solid 3px;
     border-color: $color-fuentes;
-    margin-top: 20px
+    margin-top: 20px;
 }
 @media(min-width:660px){
     .formulario-selec{
