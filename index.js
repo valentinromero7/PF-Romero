@@ -1,1 +1,0 @@
-alert("Bienvenidos a tesoros del Campo")
