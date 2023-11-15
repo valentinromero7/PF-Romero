@@ -1,4 +1,5 @@
-let maximoGastoCliente = Number(prompt("Indique la cantidad máxima de dinero que esté dispuesto a gastar y le indicaremos los productos que sean acordes a su presupuesto"))
+    let maximoGastoCliente = Number(prompt("Indique la cantidad máxima de dinero que esté dispuesto a gastar y le indicaremos los productos que sean acordes a su presupuesto"))
+
 while(isNaN(maximoGastoCliente)){
     maximoGastoCliente = Number(prompt("Por favor indique la cantidad máxima de dinero que esté dispuesto a gastar y le indicaremos los productos que sean acordes a su presupuesto"))
 }
@@ -18,7 +19,8 @@ else if(maximoGastoCliente>=15000 && maximoGastoCliente<=24999){
 else if(maximoGastoCliente>=25000){
     alert("Usted puede adquirir cualquier producto de nuestra tienda.")
 }
-
+let Monto=maximoGastoCliente
+alert ("El monto que usted ingreso es de $" + Monto)
 
 
 
