@@ -1,27 +1,24 @@
-"use strict"
-
-alert("Si el precio de tu compra supera los $20000, obtendras envio GRATIS!!!")
-let valor1 = prompt("escribi el nombre del producto que deseas comprar y calcularemos el precio total de tu compra. (bolso, toalla o matera)")
-let bolso = "bolso"
-let toalla = "toalla"
-let matera = "matera"
-let valorTotal = 0
-let precioBolso = 25000
-let precioToalla = 15000
-let precioMatera = 20000
-let minimoEnv = 20000
-
-if (valor1 !== "bolso"||"toalla"||"matera"){
-    alert("El producto ingresado no es valido, por favor ingrese uno de estos tres: bolso, toalla, matera")
+let maximoGastoCliente = Number(prompt("Indique la cantidad máxima de dinero que esté dispuesto a gastar y le indicaremos los productos que sean acordes a su presupuesto"))
+while(isNaN(maximoGastoCliente)){
+    maximoGastoCliente = Number(prompt("Por favor indique la cantidad máxima de dinero que esté dispuesto a gastar y le indicaremos los productos que sean acordes a su presupuesto"))
 }
-if (valor1 == "toalla"){
-    let noCumple = prompt("El total de su compra, no supera los $20000, si desea agregar un producto escriba 'si'")
-    if (noCumple != "si"){
-        alert("Su envio tendra un coste de $5000.")
-    }else{
-        let valor2 = prompt("escribi el nombre del producto que deseas agregar y calcularemos precio total de tu compra. (bolso, toalla o matera)")
-    }
+if(maximoGastoCliente<7499){
+    alert("el monto ingresado es insuficiente para comprar cualquier producto de nuestra tienda.")
+}else if(maximoGastoCliente>=7500 && maximoGastoCliente<=9999){
+    alert("Usted puede adquirir una bandeja pequeña.")
+}else if(maximoGastoCliente>=10000 && maximoGastoCliente<=12499){
+    alert("Usted puede adquirir una bandeja pequeña o mediana.")
 }
+else if(maximoGastoCliente>=12500 && maximoGastoCliente<=14999){
+    alert("Usted puede adquirir una bandeja pequeña mediana o grande.")
+}
+else if(maximoGastoCliente>=15000 && maximoGastoCliente<=24999){
+    alert("Usted puede adquirir varias bandejas o una toalla artesanal.")
+}
+else if(maximoGastoCliente>=25000){
+    alert("Usted puede adquirir cualquier producto de nuestra tienda.")
+}
+
 
 
 
