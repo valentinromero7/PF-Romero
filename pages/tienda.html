@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <!--Google fonts-->
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700&family=Oswald:wght@200;300;500&family=Playfair+Display:ital,wght@0,400;0,900;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Etiquetas SEO -->
-    <meta name="description" content="Aqui podras agregar productos a tu carrito para luego comprarlos.">
-    <meta name="keywords" content="Inicio, Tienda, Bolsos, Toallas, Decoracion, Materas, Artesanal,">
-    <title>Tesoros del campo-Tienda</title>
+    <meta name="description" content="Carrito: aqui podras ver los productos que estas a punto de comprar.">
+    <meta name="keywords" content="Carrito, Bolsos, Toallas, Decoracion, Materas, Artesanal,">
+    <title>Tesoros del campo-Carrito</title>
 </head>
-<body>
+<body class="body-carrito">
 
-    <header id="header-tienda">
+    <header id="header-carrito" class="col-12">
 
     <!-- MENU -->
         <nav class="navbar navbar-expand-xxxl">
             <h1>Tienda</h1>
                 <div class="container-fluid">
-                    <a href="carrito.html" class="link-carrito"><i class="bi bi-cart" ></i></a>
+                    <h3 class="link-carrito" id="verCarrito"><i class="bi bi-cart" ></i><span id="cantidadCarrito" class="cantidadCarrito"></span></h3>
                 </div> 
                 <div class="container-fluid">
                     <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="logo" class="logo"></a>
@@ -52,177 +52,36 @@
                                     <a class="dropdown-item" href="contacto.html">Contacto</a>
                                 </li>
                             </ul>
-
-                        <form class="formulario-selec">
-                            <label for="selecciona" class="label-selec">elegir un producto</label>
-                                <select name="selecciona" class="selec">
-                                    <option disabled>-selecciona tu producto-</option>
-                                    <option value="">Bolsos</option>
-                                    <option value="">Toallas</option>
-                                    <option value="">Materas</option>
-                                    <option value="">Proximamente</option>
-                                </select>   
-                        </form>
-
                         </ul>
                     </div>
                 </div>
-
-
-
         </nav>
     </header>
 
 
-<main>
-    <section>
-        <div class="padre-cards">
-            <h2>Bolsos</h2>
-
-                <div>
-                    <img src="../img/bolso-azul.jpeg" alt="bolso artesanal">
-                    <p>Precio: $25000</p>
-                    <a href="carrito.html"><button>Agregar al carrito</button></a>
-                </div>
-                <div>
-                    <img src="../img/bolso-negro.jpeg" alt="bolso artesanal">
-                    <p >Precio: $25000</p>
-                    <a href="carrito.html"><button>Agregar al carrito</button></a>
-                </div>
-                <div>
-                    <img src="../img/bolso-salmon.jpeg" alt="bolso artesanal">
-                    <p>Precio: $25000</p>
-                    <a href="carrito.html"><button>Agregar al carrito</button></a>
-                </div>
-                <div>
-                    <img src="../img/bolso-rojo.jpeg" alt="bolso artesanal">
-                    <p>Precio: $25000</p>
-                    <a href="carrito.html"><button>Agregar al carrito</button></a>
-                </div>
-                <div>
-                    <img src="../img/bolso-azul-2.jpeg" alt="bolso artesanal">
-                    <p>Precio: $25000</p>
-                    <a href="carrito.html"><button>Agregar al carrito</button></a>
-                </div>
-                <div>
-                    <img src="../img/bolso-verde.jpeg" alt="bolso artesanal">
-                    <p>Precio: $25000</p>
-                    <a href="carrito.html"><button>Agregar al carrito</button></a>
-                </div>
-
-
-            <h2>Toallas</h2>
-
-                <div>
-                    <img src="../img/toalla-rosa.jpeg" alt="toalla para baño">
-                    <p>Precio: $15000</p>
-                    <a href="carrito.html"><button>Agregar al carrito</button></a>
-                </div>
-                <div>
-                    <img src="../img/toalla-rosa-fuerte.jpeg" alt="toalla para baño"> 
-                    <p>Precio: $15000</p>
-                    <a href="carrito.html"><button>Agregar al carrito</button></a>
-                </div>
-                <div>
-                    <img src="../img/toalla-verde.jpeg" alt="toalla para baño">
-                    <p>Precio: $15000</p>
-                    <a href="carrito.html"><button>Agregar al carrito</button></a>
-                </div>
-                <div>
-                    <img src="../img/taolla-azul.jpeg" alt="toalla para baño">
-                    <p>Precio: $15000</p>
-                    <a href="carrito.html"><button>Agregar al carrito</button></a>
-                </div>
-                <div>
-                    <img src="../img/taolla-blanca.jpeg" alt="toalla para baño">
-                    <p>Precio: $15000</p>
-                    <a href="carrito.html"><button>Agregar al carrito</button></a>
-                </div>
-
-
-            <h2>Materas</h2>
-
-            <!-- Esta seccion contiene imagenes de ejemplo -->
-            <div>
-                <img src="../img/bolso-azul.jpeg" alt="matera artesanal">
-                <p>Precio: $20000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-            <div>
-                <img src="../img/bolso-azul.jpeg" alt="matera artesanal">
-                <p >Precio: $20000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-            <div>
-                <img src="../img/bolso-azul.jpeg" alt="matera artesanal">
-                <p>Precio: $20000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-            <div>
-                <img src="../img/bolso-azul.jpeg" alt="matera artesanal">
-                <p>Precio: $20000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-            <div>
-                <img src="../img/bolso-azul.jpeg" alt="matera artesanal">
-                <p>Precio: $20000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-            <div>
-                <img src="../img/bolso-azul.jpeg" alt="matera artesanal">
-                <p>Precio: $20000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-
-            <h2>Decoración</h2>
-
-            <!-- Esta seccion contiene imagenes de ejemplo -->
-            <div>
-                <img src="../img/bolso-verde.jpeg" alt="Decoracion de hogar">
-                <p>Precio: $10000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-            <div>
-                <img src="../img/bolso-verde.jpeg" alt="Decoracion de hogar">
-                <p >Precio: $10000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-            <div>
-                <img src="../img/bolso-verde.jpeg" alt="Decoracion de hogar">
-                <p>Precio: $10000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-            <div>
-                <img src="../img/bolso-verde.jpeg" alt="Decoracion de hogar">
-                <p>Precio: $10000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-            <div>
-                <img src="../img/bolso-verde.jpeg" alt="Decoracion de hogar">
-                <p>Precio: $10000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-            <div>
-                <img src="../img/bolso-verde.jpeg" alt="Decoracion de hogar">
-                <p>Precio: $10000</p>
-                <a href="carrito.html"><button>Agregar al carrito</button></a>
-            </div>
-
-        </div>
-    </section>
-
+    <main>
+        <!-- contenido del carrito -->
+        <div id="contenidoCarrito" class="contenidoCarrito"></div>
+    <div class="contenedorModal">
+            <!-- contenido del modal -->
+            <div id="contenidoModal" class="contenidoModal"></div>
+    </div>
     </main>
 
+        <footer>
+            <section class="contenedor-footer">
+                <a href="#header-carrito" class="ir-arriba">Ir arriba</a>
+                <a class="nav-link-ig" href="https://www.instagram.com/tesoros_del_campo/" target="_blank"><i class="bi bi-instagram" ></i></a> 
+            </section>
+            <p>(Todos los derechos reservados para Tesoros del campo)</p>
+        </footer>
 
-    <footer>
-        <section class="contenedor-footer">
-            <a href="#header-tienda" class="ir-arriba">Ir arriba</a>
-            <a class="nav-link-ig" href="https://www.instagram.com/tesoros_del_campo/" target="_blank"><i class="bi bi-instagram" ></i></a> 
-        </section>
-        <p>(Todos los derechos reservados para Tesoros del campo)</p>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="../js/productos.js"></script>
+        <script src="../js/tienda.js"></script>
+        <script src="../js/carrito.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 /* Navegacion */
-.navbar 
-{
+.navbar {
+    z-index: 3;
     text-decoration-line: none;
     text-decoration: none;
     background-color: $color-secundario;
@@ -13,7 +13,12 @@
         font-family: "Montserrat", sans-serif;
     } 
 }
-
+a {
+    text-decoration: none;
+    color: $color-fuentes;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+} 
 .navbar-collapse{
     position: relative;
     bottom: 55px;
@@ -111,6 +116,7 @@
     font-weight: bold;
 }
 .link-carrito {
+    color: $color-fuentes;
     width: 100%;
     @include flex-end;
     padding-right: 20px;
@@ -126,7 +132,7 @@
     background-color: $color-secundario;
     padding: 3px;
     border-radius: 20px;
-    @include flex-center
+    @include flex-center;
 }
 @media (min-width: 990px){
     .boton-comprar{

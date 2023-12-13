@@ -1,7 +1,8 @@
 /* Cards */
-.padre-cards 
+.padre-cards
 {
-    @include flex-column-center;
+    width: 300px;
+    @include flex-row-wrap;
     text-align: center;
     margin-top: 10px;
 
@@ -10,16 +11,16 @@
         border: solid 6px;
         width: 250px;
         border-color: $color-secundario;
-        margin: 0 auto;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     p 
     {
+        background-color: $color-fuentes;
         margin-top: 5px;
-        background-color: $color-primario;
         font-size: 25px;
-        color: $color-fuentes-oscuras;
+        color: $color-secundario;
         text-align: center;
         font-family: "Montserrat", sans-serif;
     }
@@ -29,7 +30,7 @@
         background-color: $color-secundario;
         font-size: 1.2rem;
         color: $color-fuentes;
-        padding: 5px;
+        padding: 10px;
         margin-top: 10px;
         margin-inline: 30px;
         margin-bottom: 20px;
@@ -37,16 +38,35 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         border-radius: 10px;
-        border-color: $color-fuentes-oscuras;
-
+        border: none;
         &:hover{
             background-color: $color-fuentes;
             color: $color-secundario;
         }
+        &:active{
+            background-color: $color-secundario;
+            color: $color-fuentes;
+        }
     }
 }
-@media (min-width: 660px) {
-    .padre-cards {
-        @include flex-row-wrap;
+
+.div-cards{
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+    border-radius: 10px;
+    background-color: $color-fuentes;
+}
+.contenidoCarrito{
+    width:100%;
+    @include flex-row-wrap;
+}
+
+.productName{
+    display: none;
+}
+.padre-cards:hover{
+    .productName{
+            display: flex;
+            font-size: .5rem;
     }
 }
