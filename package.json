@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "sass": "^1.68.0"
+    "sass": "^1.68.0",
+    "sweetalert2": "^11.10.2"
   }
 }
