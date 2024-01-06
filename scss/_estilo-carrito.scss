@@ -1,56 +1,145 @@
-/* Carrito */
-.padre-carrito {
-    margin-top: 40px;
-    @include flex-column-center;
-    gap: 40px;
+.contenedorModal{
+    @include flex-center;
+    width: 80%;
+
+    color: $color-secundario;
+    background-color: $color-secundario;
+    margin: 0 10%;
+    position: fixed;
+    overflow: auto;
+    z-index: 11;
+    top: 12vh;
+    scrollbar-color: none;
 }
-.productos-carrito 
-{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-items: center;
+.contenedorModal::-webkit-scrollbar{
+    display: none;
+}
+.contenidoModal{
     width: 100%;
-    padding-bottom: 20px;
+    max-height: 88vh;
+}
+.modalHeader{
+    z-index: 3;
+    width: 80%;
+    position: fixed;
+    background-color: $color-fuentes-oscuras;
+    color: $color-secundario;
+}
+.modalHeader h1{
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    left: 30px;
+    @include flex-start;
+    width: 200px;
+}
+.modalHeaderTitulo{
+    width: 80%;
+    justify-self: start;
+    @include flex-start;
+    color: $color-secundario;
+    background-color: $color-fuentes-oscuras;
+}
+.modalButton{
+    width: 95%;
+    height: 20px;
+    position: relative;
+    bottom: 50px;
+    @include flex-end;
+    cursor: pointer;
+    color: $color-secundario;
+    background-color: $color-fuentes-oscuras;
+}
+.contenedorModal > .modalContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+.modalContent{
+    margin-top: 88px;
     background-color: $color-fuentes;
-
-    img {
+    @include flex-start;
+}
+.modalContent img{
         border: solid 6px;
-        width: 100px;
+        width: 250px;
         border-color: $color-secundario;
-        margin-top: 20px;
-    }
+        margin: 30px;
+        margin-right: 50px;
 }
-
-@media (min-width: 660px) {
-    .productos-carrito img {
-        width: 200px;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-}
-
-.cantidad {
+.modalContent p{
+    margin-inline: 30px;
     background-color: $color-fuentes;
-    font-size: 15px;
     color: $color-secundario;
+    font-size: 1.5rem;
+    height: 30px;
+    @include flex-column-center;
+}
+.precioTotal{
+    color: $color-fuentes-oscuras;
+    background-color: $color-secundario;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.deleteProduct{
+    cursor: pointer;
+    height: 9px;
+    margin-right: 10px;
+}
+.contenedorInformacionCarrito {
+display: block;
+position: relative;
+top: 70px;
+margin: 0 auto;
 }
 
-@media (min-width: 660px) {
-    .cantidad {
-        font-size: 30px;
-    }
-}
-
-.que-lleva {
+.cantidadCarrito{
     background-color: $color-fuentes;
-    font-size: 15px;
     color: $color-secundario;
-    margin-left: 20px;
+    border-radius: 100%;
+    font-size: 12px;
+    padding: 4px;
+    position: absolute;
+    top: 80px;
+    right: 14px;
+    display: none;
+}
+@media (min-width: 660px){
+    .cantidadCarrito{
+        top: 75px;
+        right: 20px;
+    }
+}
+@media (min-width: 990px){
+    .cantidadCarrito{
+        top: 115px;
+        right: 30px;
+    }
+}
+.cantidades{
+    @include flex-row-wrap;
 }
 
-@media (min-width: 660px) {
-    .que-lleva {
-        font-size: 30px;
-    }
+.sumar{
+    @include flex-center;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: $color-secundario;
+    color: $color-fuentes-oscuras;
+    cursor: pointer;
+}
+.restar{
+    @include flex-center;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: $color-secundario;
+    color: $color-fuentes-oscuras;
+    cursor: pointer;
 }
