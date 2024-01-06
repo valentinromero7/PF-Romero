@@ -12,52 +12,6 @@ p {
     }
 }
 
-.parrafo-textarea {
-    padding-left: 20px;
-    margin-top: 10px;
-    color: $color-fuentes-oscuras;
-    margin-bottom: 10px;
-    width: 100%;
-    background-color: $color-primario;
-    @include flex-start;
-}
-
-@media (min-width: 660px) {
-    .parrafo-textarea {
-    font-size: $size-p + .5rem;
-    }
-}
-
-.parrafo-contacto {
-    @include flex-start;
-    font-weight: 1000;
-    font-size: $size-p;
-    background-color: $color-primario;
-    color: $color-fuentes-oscuras;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-@media (min-width: 660px) {
-    .parrafo-contacto {
-    font-size: $size-p + .5rem;
-    @include flex-start
-    }
-}
-.parrafo-formulario-contacto{
-
-    color: $color-fuentes-oscuras;
-    margin-top: 20px;
-    @include flex-center;
-    text-align: center;
-    font-size: $size-p - .6rem;
-    padding-inline: 20px;
-}
-@media (min-width: 660px){
-    .parrafo-formulario-contacto{
-        font-size: $size-p;
-    }
-}
-
 .resumen-index{
     font-size: $size-p - .5rem;
     background-color: $color-primario;

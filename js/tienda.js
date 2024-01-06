@@ -23,7 +23,6 @@ agregar.innerText = "Agregar al carrito";
 content.append(agregar)
 
 agregar.addEventListener ("click", () => {
-
     const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id)
     
     if(repeat === true){

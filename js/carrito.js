@@ -54,7 +54,6 @@ const pintarCarrito = () => {
         eliminar.innerText = "x"
         eliminar.className = "deleteProduct"
         mostrarProductosCarrito.append (eliminar)
-
         eliminar.addEventListener("click", eliminarProducto)
     })
 
@@ -65,7 +64,9 @@ const pintarCarrito = () => {
     precioTotal.innerHTML=`Total a pagar $${total}`
     contenidoModal.append(precioTotal)
 
-
+    let pagar = document.createElement = ("button")
+    pagar.innerText = "pagar"
+    precioTotal.append(pagar)
 } 
 
     verCarrito.addEventListener("click", pintarCarrito)
@@ -89,5 +90,7 @@ const pintarCarrito = () => {
 
         cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"))
     }
+
+
 
     contadorCarrito()

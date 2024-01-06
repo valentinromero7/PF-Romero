@@ -24,9 +24,6 @@
     font-family: "Montserrat", sans-serif;
     @include flex-column-center
 }
-#masculino,#femenino,#nobin{
-margin-left: 5px;
-}
 @media (min-width:660px) {
     .label{
         font-size: 1.5rem;
@@ -58,40 +55,6 @@ margin-left: 5px;
     @include flex-column-center;
     margin-bottom: 50px;
     
-}
-.form-contacto {
-    color: $color-fuentes-oscuras;
-    background-color: $color-primario;
-    font-size: 18px;
-    @include flex-column-center
-    }
-    
-@media (min-width: 660px) {
-    .form-contacto {
-    font-size: 1.5rem;
-    margin-left: 20px;
-    margin-top: 40px;
-    }
-}
-
-.div-form-genero{
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom: 30px;
-}
-textarea {
-    margin-left: 20px;
-    border: solid 2px;
-    border-color: $color-fuentes;
-    width: 250px;
-    height: 100px;
-}
-
-@media (min-width: 660px) {
-    textarea {
-    width: 400px;
-    height: 200px;
-    }
 }
 input {
     margin-left: 20px;
