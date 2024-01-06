@@ -198,10 +198,11 @@ li {
 
 /* Cards */
 .padre-cards {
+  width: 300px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
   margin-top: 10px;
 }
@@ -209,14 +210,14 @@ li {
   border: solid 6px;
   width: 250px;
   border-color: #E7D7C1;
-  margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .padre-cards p {
+  background-color: #735751;
   margin-top: 5px;
-  background-color: #A78A7F;
   font-size: 25px;
-  color: #402722;
+  color: #E7D7C1;
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
@@ -224,7 +225,7 @@ li {
   background-color: #E7D7C1;
   font-size: 1.2rem;
   color: #735751;
-  padding: 5px;
+  padding: 10px;
   margin-top: 10px;
   margin-inline: 30px;
   margin-bottom: 20px;
@@ -232,21 +233,41 @@ li {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   border-radius: 10px;
-  border-color: #402722;
+  border: none;
 }
 .padre-cards button:hover {
   background-color: #735751;
   color: #E7D7C1;
 }
-
-@media (min-width: 660px) {
-  .padre-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+.padre-cards button:active {
+  background-color: #E7D7C1;
+  color: #735751;
 }
+
+.div-cards {
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 10px;
+  background-color: #735751;
+}
+
+.contenidoCarrito {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.productName {
+  display: none;
+}
+
+.padre-cards:hover .productName {
+  display: flex;
+  font-size: 0.5rem;
+}
+
 /* Titulos */
 h1 {
   margin-bottom: 40px;
