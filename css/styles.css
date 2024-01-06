@@ -1,4 +1,5 @@
-
+/* variables de la paleta de colores */
+/* variables de fuentes */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
 
 /* Navegacion */
 .navbar {
+  z-index: 3;
   text-decoration-line: none;
   text-decoration: none;
   background-color: #E7D7C1;
@@ -18,6 +20,13 @@ body {
   height: 150px;
 }
 .navbar a {
+  text-decoration: none;
+  color: #735751;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
   text-decoration: none;
   color: #735751;
   font-size: 1.5rem;
@@ -126,6 +135,7 @@ body {
 }
 
 .link-carrito {
+  color: #735751;
   width: 100%;
   display: flex;
   justify-content: end;
@@ -241,10 +251,11 @@ select option {
 
 /* Cards */
 .padre-cards {
+  width: 300px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
   margin-top: 10px;
 }
@@ -252,14 +263,14 @@ select option {
   border: solid 6px;
   width: 250px;
   border-color: #E7D7C1;
-  margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .padre-cards p {
+  background-color: #735751;
   margin-top: 5px;
-  background-color: #A78A7F;
   font-size: 25px;
-  color: #402722;
+  color: #E7D7C1;
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
@@ -267,7 +278,7 @@ select option {
   background-color: #E7D7C1;
   font-size: 1.2rem;
   color: #735751;
-  padding: 5px;
+  padding: 10px;
   margin-top: 10px;
   margin-inline: 30px;
   margin-bottom: 20px;
@@ -275,21 +286,41 @@ select option {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   border-radius: 10px;
-  border-color: #402722;
+  border: none;
 }
 .padre-cards button:hover {
   background-color: #735751;
   color: #E7D7C1;
 }
-
-@media (min-width: 660px) {
-  .padre-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+.padre-cards button:active {
+  background-color: #E7D7C1;
+  color: #735751;
 }
+
+.div-cards {
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 10px;
+  background-color: #735751;
+}
+
+.contenidoCarrito {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.productName {
+  display: none;
+}
+
+.padre-cards:hover .productName {
+  display: flex;
+  font-size: 0.5rem;
+}
+
 /* Titulos */
 h1 {
   margin-bottom: 40px;
@@ -595,62 +626,182 @@ input {
     width: 180px;
   }
 }
-/* Carrito */
-.padre-carrito {
-  margin-top: 40px;
+.contenedorModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  color: #E7D7C1;
+  background-color: #E7D7C1;
+  margin: 0 10%;
+  position: fixed;
+  overflow: auto;
+  z-index: 11;
+  top: 12vh;
+  scrollbar-color: none;
+}
+
+.contenedorModal::-webkit-scrollbar {
+  display: none;
+}
+
+.contenidoModal {
+  width: 100%;
+  max-height: 88vh;
+}
+
+.modalHeader {
+  z-index: 3;
+  width: 80%;
+  position: fixed;
+  background-color: #402722;
+  color: #E7D7C1;
+}
+
+.modalHeader h1 {
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  left: 30px;
+  display: flex;
+  justify-content: start;
+  width: 200px;
+}
+
+.modalHeaderTitulo {
+  width: 80%;
+  justify-self: start;
+  display: flex;
+  justify-content: start;
+  color: #E7D7C1;
+  background-color: #402722;
+}
+
+.modalButton {
+  width: 95%;
+  height: 20px;
+  position: relative;
+  bottom: 50px;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+  color: #E7D7C1;
+  background-color: #402722;
+}
+
+.contenedorModal > .modalContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+}
+
+.modalContent {
+  margin-top: 88px;
+  background-color: #735751;
+  display: flex;
+  justify-content: start;
+}
+
+.modalContent img {
+  border: solid 6px;
+  width: 250px;
+  border-color: #E7D7C1;
+  margin: 30px;
+  margin-right: 50px;
+}
+
+.modalContent p {
+  margin-inline: 30px;
+  background-color: #735751;
+  color: #E7D7C1;
+  font-size: 1.5rem;
+  height: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
 }
 
-.productos-carrito {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.precioTotal {
+  color: #402722;
+  background-color: #E7D7C1;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.deleteProduct {
+  cursor: pointer;
+  height: 9px;
+  margin-right: 10px;
+}
+
+.contenedorInformacionCarrito {
+  display: block;
+  position: relative;
+  top: 70px;
+  margin: 0 auto;
+}
+
+.cantidadCarrito {
+  background-color: #735751;
+  color: #E7D7C1;
+  border-radius: 100%;
+  font-size: 12px;
+  padding: 4px;
+  position: absolute;
+  top: 80px;
+  right: 14px;
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .cantidadCarrito {
+    top: 75px;
+    right: 20px;
+  }
+}
+@media (min-width: 990px) {
+  .cantidadCarrito {
+    top: 115px;
+    right: 30px;
+  }
+}
+.cantidades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sumar {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
-  width: 100%;
-  padding-bottom: 20px;
-  background-color: #735751;
-}
-.productos-carrito img {
-  border: solid 6px;
-  width: 100px;
-  border-color: #E7D7C1;
-  margin-top: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: #E7D7C1;
+  color: #402722;
+  cursor: pointer;
 }
 
-@media (min-width: 660px) {
-  .productos-carrito img {
-    width: 200px;
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-}
-.cantidad {
-  background-color: #735751;
-  font-size: 15px;
-  color: #E7D7C1;
-}
-
-@media (min-width: 660px) {
-  .cantidad {
-    font-size: 30px;
-  }
-}
-.que-lleva {
-  background-color: #735751;
-  font-size: 15px;
-  color: #E7D7C1;
-  margin-left: 20px;
+.restar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: #E7D7C1;
+  color: #402722;
+  cursor: pointer;
 }
 
-@media (min-width: 660px) {
-  .que-lleva {
-    font-size: 30px;
-  }
-}
 /* Conocenos */
 .conocenos {
   display: flex;
