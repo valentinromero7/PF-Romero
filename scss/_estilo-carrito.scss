@@ -83,6 +83,7 @@
     background-color: $color-secundario;
     font-size: 2rem;
     padding: 20px;
+    padding-bottom: 0%;
     text-align: center;
     padding-top: 20px;
 }
@@ -142,4 +143,15 @@ margin: 0 auto;
     background-color: $color-secundario;
     color: $color-fuentes-oscuras;
     cursor: pointer;
+}
+.pagarTotal{
+position: relative;
+left: 80%;
+bottom: 30px;
+width: 120px;
+text-align: center;
+color: $color-fuentes-oscuras;
+background-color: $color-primario;
+border-radius: 10px;
+border-color: $color-fuentes-oscuras;
 }

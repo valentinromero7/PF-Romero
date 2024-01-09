@@ -60,22 +60,22 @@
             <div class="padre-cards div-cards">
                 <img src="img/bolso-salmon.jpeg" alt="bolso artesanal">
                 <p>Bolsos</p>
-                <a href="pages/tienda.html"><button class="boton-comprar" >visitar en la Tienda</button></a>
+                <a href="pages/tienda.html"><button class="boton-agregar" >visitar en la Tienda</button></a>
             </div>
             <div class="padre-cards div-cards">
                 <img src="img/taolla-blanca.jpeg" alt="bolso artesanal">
                 <p>Toallas</p>
-                <a href="pages/tienda.html"><button class="boton-comprar" >visitar en la Tienda</button></a>
+                <a href="pages/tienda.html"><button class="boton-agregar" >visitar en la Tienda</button></a>
             </div>
             <div class="padre-cards div-cards">
                 <img src="img/bandeja-grande2.jpeg" alt="bandeja artesanal">
                 <p>Bandejas</p>
-                <a href="pages/tienda.html"><button class="boton-comprar" >visitar en la Tienda</button></a>
+                <a href="pages/tienda.html"><button class="boton-agregar" >visitar en la Tienda</button></a>
             </div>
             <div class="padre-cards div-cards">
                 <img src="img/taolla-blanca.jpeg" alt="bolso artesanal">
                 <p>Producto ad.</p>
-                <a href="pages/tienda.html"><button class="boton-comprar" >visitar en la Tienda</button></a>
+                <a href="pages/tienda.html"><button class="boton-agregar" >visitar en la Tienda</button></a>
             </div>
         </div>
 
@@ -97,25 +97,19 @@
         <h2>Registrarse:</h2>
 
             <div>
+                <input type="text" id="nombre">
                 <label for="nombre" class="label">Nombre</label>
-                <input type="text" id="nombre"
-                required
-                title="Por favor completa este campo">
             </div>
             <div>
+                <input type="text" id="apellido">
                 <label for="apellido" class="label">Apellido</label>
-                <input type="text" id="apellido"
-                required
-                title="Por favor completa este campo">
             </div>
             <div>
-                <label for="email" class="label">Email</label>
-                <input type="email"
-                required
-                title="Por favor completa este campo">
+                <input type="email" id="mail">
+                <label for="mail" class="label">Email</label>
             </div>
 
-        <input type="submit" value="Enviar formulario" class="botones-formulario">
+        <input type="submit" value="Enviar formulario" class="botones-formulario" id="enviarFormulario">
 
         <input type="reset" value="Limpiar formulario" class="botones-formulario">
 

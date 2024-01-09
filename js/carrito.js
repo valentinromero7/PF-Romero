@@ -64,9 +64,10 @@ const pintarCarrito = () => {
     precioTotal.innerHTML=`Total a pagar $${total}`
     contenidoModal.append(precioTotal)
 
-    let pagar = document.createElement = ("button")
+    const pagar = document.createElement ("button")
     pagar.innerText = "pagar"
-    precioTotal.append(pagar)
+    pagar.className = "pagarTotal"
+    contenidoModal.append(pagar)
 } 
 
     verCarrito.addEventListener("click", pintarCarrito)

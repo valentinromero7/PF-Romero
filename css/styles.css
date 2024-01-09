@@ -138,23 +138,6 @@ body {
     padding-right: 110px;
   }
 }
-.boton-comprar {
-  text-decoration: none;
-  color: #402722;
-  background-color: #E7D7C1;
-  padding: 3px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (min-width: 990px) {
-  .boton-comprar {
-    width: 200px;
-    font-size: 30px;
-  }
-}
 .container-fluid {
   padding: 0%;
 }
@@ -194,6 +177,18 @@ li {
   display: inline;
   gap: 20px;
   font-family: "Montserrat", sans-serif;
+}
+
+.swal2-popup h2 {
+  background-color: #E7D7C1;
+}
+
+.swal2-popup {
+  background-color: #E7D7C1;
+}
+
+.swal2-actions button {
+  margin-inline: 30px;
 }
 
 /* Cards */
@@ -586,6 +581,7 @@ input {
   background-color: #E7D7C1;
   font-size: 2rem;
   padding: 20px;
+  padding-bottom: 0%;
   text-align: center;
   padding-top: 20px;
 }
@@ -656,6 +652,18 @@ input {
   background-color: #E7D7C1;
   color: #402722;
   cursor: pointer;
+}
+
+.pagarTotal {
+  position: relative;
+  left: 80%;
+  bottom: 30px;
+  width: 120px;
+  text-align: center;
+  color: #402722;
+  background-color: #A78A7F;
+  border-radius: 10px;
+  border-color: #402722;
 }
 
 /* Conocenos */
